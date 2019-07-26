@@ -3,7 +3,7 @@ import numpy as np
 
 track_name = "New_York_Track"
 absolute_path = "."
-waypoints = np.load("%s/tracks/%s.npy" % (absolute_path, track_name))
+waypoints = np.load("%s/%s.npy" % (absolute_path, track_name))
 
 print("Number of waypoints = " + str(waypoints.shape[0]))
 for i, point in enumerate(waypoints):
